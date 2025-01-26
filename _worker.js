@@ -1,1 +1,147 @@
-const _0x14482c=_0x3c58;(function(_0x50fb52,_0x2e47c2){const _0x5ef4cf=_0x3c58,_0x484c98=_0x50fb52();while(!![]){try{const _0x113da2=-parseInt(_0x5ef4cf(0x19d))/0x1*(-parseInt(_0x5ef4cf(0x182))/0x2)+-parseInt(_0x5ef4cf(0x179))/0x3*(-parseInt(_0x5ef4cf(0x197))/0x4)+parseInt(_0x5ef4cf(0x16a))/0x5+-parseInt(_0x5ef4cf(0x17c))/0x6*(-parseInt(_0x5ef4cf(0x172))/0x7)+parseInt(_0x5ef4cf(0x188))/0x8+-parseInt(_0x5ef4cf(0x17b))/0x9+-parseInt(_0x5ef4cf(0x189))/0xa;if(_0x113da2===_0x2e47c2)break;else _0x484c98['push'](_0x484c98['shift']());}catch(_0x3a754b){_0x484c98['push'](_0x484c98['shift']());}}}(_0x48b9,0x8273f));const subLinks=['https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/splitted/vmess.txt',_0x14482c(0x173),_0x14482c(0x181),_0x14482c(0x167),_0x14482c(0x166)];class VmessProcessor{constructor(_0x28c281,_0x48e25b=0x18*0x3c*0x3e8){const _0x4ac9f8=_0x14482c;this[_0x4ac9f8(0x17f)]=_0x28c281,this[_0x4ac9f8(0x193)]=_0x48e25b,this[_0x4ac9f8(0x18c)]=null,this['lastFetchTime']=0x0;}async[_0x14482c(0x170)](){const _0xd281c6=_0x14482c,_0x1768d8=[],_0x797d8f=[];for(const _0x26aad0 of this['subLinks']){try{const _0x361ef6=await fetch(_0x26aad0);if(!_0x361ef6['ok']){const _0x3cd279=_0xd281c6(0x16d)+_0x26aad0+':\x20'+_0x361ef6[_0xd281c6(0x196)];console['error'](_0x3cd279),_0x797d8f[_0xd281c6(0x1a2)](_0x3cd279);continue;}const _0x21a7f7=await _0x361ef6['text']();_0x1768d8['push'](_0x21a7f7);}catch(_0x38ef4c){const _0x100c74=_0xd281c6(0x19a)+_0x26aad0+':\x20'+_0x38ef4c;console[_0xd281c6(0x175)](_0x100c74,_0x38ef4c),_0x797d8f['push'](_0x100c74);}}return _0x797d8f['length']>0x0&&console[_0xd281c6(0x18d)](_0xd281c6(0x165),_0x797d8f),_0x1768d8['join']('\x0a');}['processConfig'](_0x20308c,_0x3153c9){const _0xc321c5=_0x14482c;try{_0x20308c=_0x20308c[_0xc321c5(0x1a0)](_0xc321c5(0x177),''),_0x20308c=atob(_0x20308c),_0x20308c=JSON[_0xc321c5(0x16e)](_0x20308c);if(_0x20308c[_0xc321c5(0x195)]&&!this['isIp'](_0x20308c[_0xc321c5(0x195)])&&_0x20308c[_0xc321c5(0x19b)]==='ws'&&_0x20308c[_0xc321c5(0x17d)]===0x1bb)return{'v':'2','ps':_0xc321c5(0x171)+_0x20308c[_0xc321c5(0x195)],'add':_0x3153c9[_0xc321c5(0x194)],'port':_0x20308c[_0xc321c5(0x17d)],'id':_0x20308c['id'],'net':_0x20308c[_0xc321c5(0x19b)],'host':_0x3153c9[_0xc321c5(0x194)],'path':'/'+_0x20308c['sni']+_0x20308c[_0xc321c5(0x19f)],'tls':_0x20308c['tls'],'sni':_0x3153c9[_0xc321c5(0x194)],'aid':'0','scy':_0xc321c5(0x1a1),'type':_0xc321c5(0x1a1),'fp':_0xc321c5(0x186),'alpn':_0xc321c5(0x191)};}catch(_0x456297){console['error'](_0xc321c5(0x164),_0x456297);}return null;}[_0x14482c(0x174)](_0x110271){const _0x5f02b3=_0x14482c;if(!_0x110271)return![];const _0x3993f4=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])(\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])){3}$/;return _0x3993f4[_0x5f02b3(0x183)](_0x110271)&&_0x110271[_0x5f02b3(0x169)]('.')[_0x5f02b3(0x18f)]===0x4;}async[_0x14482c(0x18b)](_0x46cf7c){const _0x367f20=_0x14482c;try{const _0x2f318d=new URL(_0x46cf7c['url']);if(_0x2f318d[_0x367f20(0x168)][_0x367f20(0x19e)](_0x367f20(0x180))){if(this['cachedConfigs']&&Date[_0x367f20(0x185)]()-this[_0x367f20(0x19c)]<this[_0x367f20(0x193)])return console[_0x367f20(0x176)](_0x367f20(0x16b)),new Response(this[_0x367f20(0x18c)],{'headers':{'Content-Type':_0x367f20(0x18e)}});const _0x5c162e=await this[_0x367f20(0x170)](),_0x12a954=_0x5c162e['split']('\x0a'),_0x46b6b2=await Promise[_0x367f20(0x199)](_0x12a954[_0x367f20(0x16c)](async _0x838809=>{const _0x2d2235=_0x367f20,_0xd0dd5=this['processConfig'](_0x838809,_0x2f318d);return _0xd0dd5?_0x2d2235(0x177)+btoa(JSON[_0x2d2235(0x178)](_0xd0dd5))+'\x0a':'';}));return this['cachedConfigs']=_0x46b6b2[_0x367f20(0x187)](''),this['lastFetchTime']=Date[_0x367f20(0x185)](),console['log'](_0x367f20(0x16f)),new Response(this[_0x367f20(0x18c)],{'headers':{'Content-Type':_0x367f20(0x18e)}});}else{const _0x545032=new URL(_0x46cf7c[_0x367f20(0x17a)]),_0x812b2d=_0x545032[_0x367f20(0x168)][_0x367f20(0x1a0)](/^\/*/,'')[_0x367f20(0x169)]('/');if(_0x812b2d['length']>0x0){const _0x29998f=_0x812b2d[0x0],_0x3eb7af=_0x812b2d['slice'](0x1)[_0x367f20(0x187)]('/');return _0x545032[_0x367f20(0x168)]=_0x3eb7af,_0x545032['hostname']=_0x29998f,_0x545032['protocol']=_0x367f20(0x192),console['log'](_0x367f20(0x17e)+_0x46cf7c[_0x367f20(0x17a)]+_0x367f20(0x190)+_0x545032[_0x367f20(0x18a)]),fetch(new Request(_0x545032,_0x46cf7c));}else return new Response('مسیر\x20درخواست\x20نامعتبر',{'status':0x190});}}catch(_0x43ef28){return console[_0x367f20(0x175)](_0x367f20(0x184),_0x43ef28),new Response(_0x367f20(0x198)+_0x43ef28['message'],{'status':0x1f4});}}}function _0x3c58(_0x1d08be,_0x2c1f72){const _0x48b934=_0x48b9();return _0x3c58=function(_0x3c5845,_0x2100c4){_0x3c5845=_0x3c5845-0x164;let _0x13a364=_0x48b934[_0x3c5845];return _0x13a364;},_0x3c58(_0x1d08be,_0x2c1f72);}function _0x48b9(){const _0x37f165=['cachedConfigs','warn','text/plain','length','\x20به\x20','http/1.1','https','cacheDuration','hostname','sni','status','218860zbUevY','خطای\x20سرور:\x20','all','خطا\x20در\x20دریافت\x20از\x20','net','lastFetchTime','145703VQmBVA','startsWith','path','replace','auto','push','خطا\x20در\x20پردازش\x20vmess:','برخی\x20از\x20لینک‌ها\x20با\x20خطا\x20مواجه\x20شدند:','https://raw.githubusercontent.com/coldwater-10/V2rayCollectorLire/main/vmess_iran.txt','https://raw.githubusercontent.com/coldwater-10/V2Hub2/main/Split/Normal/vmess','pathname','split','2207720llseyn','استفاده\x20از\x20کش\x20موجود','map','خطا\x20در\x20دریافت\x20داده‌ها\x20از\x20','parse','داده‌های\x20جدید\x20دریافت\x20و\x20پردازش\x20شدند','fetchConfigs','Node-','1696499FYqBDi','https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vmess.txt','isIp','error','log','vmess://','stringify','21wpZaJI','url','7574562srTrTK','6soyrWx','port','تغییر\x20مسیر\x20درخواست\x20از\x20','subLinks','/sub','https://raw.githubusercontent.com/coldwater-10/V2Hub3/main/Split/Normal/vmess','14dHiTsB','test','خطا\x20در\x20پردازش\x20درخواست:','now','chrome','join','3594944GcshYQ','11602420npyDOg','href','handleRequest'];_0x48b9=function(){return _0x37f165;};return _0x48b9();}const processor=new VmessProcessor(subLinks);export default{async 'fetch'(_0x42790e){return processor['handleRequest'](_0x42790e);}};
+// لیست لینک‌های کانفیگ
+const subLinks = [
+  'https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/sub/splitted/vmess.txt',
+  'https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vmess.txt',
+  'https://raw.githubusercontent.com/coldwater-10/V2Hub3/main/Split/Normal/vmess',
+  'https://raw.githubusercontent.com/coldwater-10/V2Hub2/main/Split/Normal/vmess',
+  'https://raw.githubusercontent.com/coldwater-10/V2rayCollectorLire/main/vmess_iran.txt',
+ // لینک‌های اضافی
+];
+
+class VmessProcessor {
+  constructor(subLinks) {
+    this.subLinks = subLinks;
+    // در پلن رایگان، حداکثر مقدار max-age دو ساعت است
+    // این مقدار را بر اساس نیاز خود تنظیم کنید
+    // برای مثال، 7200 ثانیه معادل 2 ساعت است
+    this.cacheDuration = 7200;
+  }
+
+  // دریافت داده‌ها از همه‌ی لینک‌ها
+  async fetchConfigs() {
+    try {
+      const configs = await Promise.all(
+        this.subLinks.map(async (link) => {
+          try {
+            const resp = await fetch(link);
+            if (!resp.ok) throw new Error(`خطا در دریافت داده‌ها از ${link}: ${resp.status}`);
+            return await resp.text();
+          } catch (error) {
+            console.error(`خطا در دریافت از ${link}:`, error);
+            return '';
+          }
+        })
+      );
+      // فشرده‌سازی کانفیگ‌ها با حذف فضاهای خالی و خطوط جدید
+      return configs.join('\n').replace(/\s+/g, '');
+    } catch (error) {
+      console.error("خطا در دریافت داده‌ها:", error);
+      throw error;
+    }
+  }
+
+  // پردازش هر خط از کانفیگ‌ها
+  processConfig(subConfig, url) {
+    try {
+      subConfig = subConfig.replace('vmess://', '');
+      subConfig = atob(subConfig);
+      subConfig = JSON.parse(subConfig);
+
+      if (subConfig.sni && !this.isIp(subConfig.sni) && subConfig.net === 'ws' && subConfig.port === 443) {
+        return {
+          v: '2',
+          ps: `Node-${subConfig.sni}`,
+          add: url.hostname,
+          port: subConfig.port,
+          id: subConfig.id,
+          net: subConfig.net,
+          host: url.hostname,
+          path: `/${subConfig.sni}${subConfig.path}`,
+          tls: subConfig.tls,
+          sni: url.hostname,
+          aid: '0',
+          scy: 'auto',
+          type: 'auto',
+          fp: 'chrome',
+          alpn: 'http/1.1',
+        };
+      }
+    } catch (error) {
+      console.error("خطا در پردازش vmess:", error);
+    }
+    return null;
+  }
+
+  // بررسی اینکه آیا رشته داده‌شده یک IP معتبر است
+  isIp(ipstr) {
+    if (!ipstr) return false;
+    const ipPattern = /^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])(\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])){3}$/;
+    return ipPattern.test(ipstr) && ipstr.split('.').length === 4;
+  }
+
+  // مدیریت درخواست‌ها
+  async handleRequest(request, event) {
+    try {
+      const url = new URL(request.url);
+      const cache = caches.default;
+      const cacheKey = new Request(request.url, request);
+
+      if (url.pathname.startsWith('/sub')) {
+        // بررسی حافظه پنهان
+        let response = await cache.match(cacheKey);
+
+        if (!response) {
+          console.log("کانفیگ‌ها در کش موجود نیستند، در حال دریافت...");
+
+          // دریافت و پردازش کانفیگ‌ها
+          const subConfigs = await this.fetchConfigs();
+          const configLines = subConfigs.split('\n');
+
+          const newConfigs = await Promise.all(
+            configLines.map(async (subConfig) => {
+              const processed = this.processConfig(subConfig, url);
+              return processed ? `vmess://${btoa(JSON.stringify(processed))}` : '';
+            })
+          );
+
+          const configData = newConfigs.join('');
+
+          // ایجاد پاسخ با هدر Cache-Control
+          response = new Response(configData, {
+            headers: {
+              'Cache-Control': `public, max-age=${this.cacheDuration}, stale-while-revalidate=30, stale-if-error=86400`,
+            },
+          });
+
+          // ذخیره پاسخ در حافظه پنهان
+          event.waitUntil(cache.put(cacheKey, response.clone()));
+
+          console.log("کانفیگ‌های جدید دریافت و در کش ذخیره شدند");
+        } else {
+          console.log("استفاده از کش موجود برای کانفیگ‌ها");
+        }
+
+        return response;
+      } else {
+        // تغییر مسیر درخواست‌های دیگر
+        const newUrl = new URL(request.url);
+        const [address, ...path] = newUrl.pathname.replace(/^\/*/, '').split('/');
+        newUrl.pathname = path.join('/');
+        newUrl.hostname = address;
+        newUrl.protocol = 'https';
+        return fetch(new Request(newUrl, request));
+      }
+    } catch (error) {
+      console.error("خطا در پردازش درخواست:", error);
+      return new Response("خطای سرور: " + error.message, { status: 500 });
+    }
+  }
+}
+
+// ایجاد یک نمونه از کلاس VmessProcessor
+const processor = new VmessProcessor(subLinks);
+
+// مدیریت درخواست‌های ورودی
+addEventListener('fetch', event => {
+  event.respondWith(processor.handleRequest(event.request, event));
+});
